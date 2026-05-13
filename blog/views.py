@@ -8,3 +8,8 @@ from django.http import HttpResponse
 def blog(request):
     print('BLOG')
     return HttpResponse('BLOG')
+
+
+def exemplo(request):
+    print('exemplo')
+    return HttpResponse('Exemplo')
