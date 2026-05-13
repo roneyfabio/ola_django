@@ -5,9 +5,16 @@ from django.shortcuts import render
 
 def home(request):
     print('HOME')
+    
+    context = {
+         'text': 'Estamos na home',
+        
+    }
+    
     return render(
         request,
-        'home/index.html'
+        'home/index.html',
+        context,       
         
     )
 
