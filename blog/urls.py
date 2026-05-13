@@ -17,8 +17,10 @@ Including another URLconf
 from django.urls import path
 from blog import views
 
+app_name = 'blog'
+
 # blog/
 urlpatterns = [    
-    path('', views.blog),
-    path('exemplo/', views.exemplo),
+    path('', views.blog, name='home'),
+    path('exemplo/', views.exemplo, name='exemplo'),
 ]
