@@ -1,15 +1,14 @@
 from django.shortcuts import render
+from blog.data import posts
 
 # Create your views here.
-
-
 
 def blog(request):
     print('BLOG')
     
     context = {
         'text': 'Olá blog',
-        'title':'Essa é uma página de exemplo - ',
+        'posts': posts
     }
     
     return render(
